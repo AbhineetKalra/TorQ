@@ -889,6 +889,7 @@ It is possible to get the functional form of a where clause by running parse on 
     
 The where clause is then the 3rd item returned in the parse tree.
 
+Please bear in mind that the because of the data structure produced, this utility can be quite memory intensive, the memory footprint can be reduced by setting a larger time interval so that the data is split into fewer chunks, or reducing the scope of the data (by setting a smaller time period, selecting only needed syms or using a custom where clause etc).
 
 ## Examples:
 
